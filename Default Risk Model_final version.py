@@ -3,7 +3,6 @@
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-import statsmodels.api as sm
 
 #Importing specific tools
 from joblib import dump, load
@@ -430,6 +429,4 @@ plt.xlabel("Odds Ratio")
 plt.title("Top Features Reducing Default Risk")
 plt.gca().invert_yaxis()
 plt.show()
-
-
 # %%
