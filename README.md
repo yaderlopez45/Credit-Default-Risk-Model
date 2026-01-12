@@ -8,6 +8,16 @@ Rather than focusing solely on accuracy, the model emphasizes **recall for defau
 
 Overall, this project demonstrates a realistic and regulator-friendly approach to credit risk modeling, showing how statistical methods can be applied in a transparent and defensible way for financial decision-making.
 
+## Data
+
+This project uses a loan-level dataset sourced from Kaggle. Due to file size and licensing constraints, the dataset is not included in this repository.
+
+**Source:**  
+https://www.kaggle.com/datasets/adarshsng/lending-club-loan-data-csv
+
+Instructions for downloading and placing the dataset locally are provided in `data/README.md`.
+
+
 ## Limitations
 
 This model is trained on historical loan performance data and therefore inherits several limitations common to credit risk modeling. The dataset is imbalanced, with significantly fewer default events than non-defaults, which creates tradeoffs between recall and precision depending on the chosen classification threshold. Model performance may vary when applied to borrowers, economic conditions, or lending policies that differ from those observed in the training data. In addition, some borrower attributes may be missing or imperfectly reported, which can introduce noise and reduce predictive stability. As with any statistical model, results should be interpreted as risk estimates rather than deterministic outcomes.
