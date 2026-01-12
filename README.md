@@ -96,7 +96,7 @@ renaming_map = {
     "annual_inc": "annual_income",
     "open_acc": "open_accounts",
     "issue_d": "issue_date",
-    "inq_last_6mths": "delinq_last_6mths"
+    "inq_last_6mths": "inquiries_last_6mths"
 }
 
 df = df.rename(columns=renaming_map)
@@ -174,6 +174,7 @@ features = [
     "dti",
     "delinq_2yrs",
     "never_delinquent",
+    "inquiries_last_6mths"
     "credit_age",
     "open_accounts",
     "loan_to_income",
