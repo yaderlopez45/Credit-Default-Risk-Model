@@ -8,6 +8,19 @@ Rather than focusing solely on accuracy, the model emphasizes **recall for defau
 
 Overall, this project demonstrates a realistic and regulator-friendly approach to credit risk modeling, showing how statistical methods can be applied in a transparent and defensible way for financial decision-making.
 
+## Limitations
+
+This model is trained on historical loan performance data and therefore inherits several limitations common to credit risk modeling. The dataset is imbalanced, with significantly fewer default events than non-defaults, which creates tradeoffs between recall and precision depending on the chosen classification threshold. Model performance may vary when applied to borrowers, economic conditions, or lending policies that differ from those observed in the training data. In addition, some borrower attributes may be missing or imperfectly reported, which can introduce noise and reduce predictive stability. As with any statistical model, results should be interpreted as risk estimates rather than deterministic outcomes.
+
+## Business Use Cases
+
+This credit default risk model can support multiple decision-making processes within lending and risk management contexts:
+
+- **Credit underwriting:** Assist loan approval decisions by flagging high-risk applicants before origination.
+- **Portfolio risk monitoring:** Track aggregate default risk across existing loan portfolios and identify segments with deteriorating credit quality.
+- **Risk-based pricing:** Inform interest rate or fee adjustments based on predicted probability of default.
+- **Early warning systems:** Detect emerging risk trends and enable proactive intervention strategies before defaults occur.
+
 ## Importing Libraries
 
 This section loads all libraries required for data manipulation, visualization, statistical modeling, and machine learning. The stack combines pandas and NumPy for data handling, matplotlib for visualization, and scikit-learn for preprocessing, model building, and evaluation.
