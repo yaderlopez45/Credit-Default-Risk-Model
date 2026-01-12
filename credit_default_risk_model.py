@@ -46,7 +46,7 @@ df["default"] = df["loan_status"].isin(["Charged Off", "Default"]).astype(int)
 # Rename inquiry column for consistency
 
 renaming_map = {"loan_amnt":"loan_amount",
- "int_rate":"interest_rate", "emp_length":"employment_length", "annual_inc":"annual_income", "open_acc": "open_accounts", "issue_d":"issue_date", "inq_last_6mths":"delinq_last_6mths"}
+ "int_rate":"interest_rate", "emp_length":"employment_length", "annual_inc":"annual_income", "open_acc": "open_accounts", "issue_d":"issue_date", "inq_last_6mths":"inquiries_last_6mths"}
 
 df = df.rename(columns=renaming_map)
 
@@ -149,6 +149,7 @@ features = [
     "dti",
     "delinq_2yrs",
     "never_delinquent",
+    "inquiries_last_6mths"
     "credit_age",
     "open_accounts",
     "loan_to_income",
